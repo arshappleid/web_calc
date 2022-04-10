@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Start Page</title>
+		<link rel="stylesheet" href="styles.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</head>
+	<body>
+		<script src = "./displayResp.js"></script>
+		<h1>Online Web Calculator</h1>
+		<div>
+			<form autocomplete="off" >
+				<div class = "container">
+				<div>
+					<label for="left_operand">Left Operand:</label><br />
+					<input type="number" id="left_operand" name="left_operand" /><br />
+				</div>
+				<div class = "buttons">
+					<span>
+                    <h3>Select one of the operations.</h3>
+					<input type="radio" id="add_but" name="operator" value="+" />
+					<label for="add_but">+ Addition</label><br />
+                    <input type="radio" id="subtract_but" name="operator" value="-" />
+					<label for="subtract_but">- Subtraction</label><br />
+                    <input type="radio" id="multiply_but" name="operator" value="*" />
+					<label for="multiply_but">* Multiplication</label><br />
+                    <input type="radio" id="division_but" name="operator" value="/" />
+					<label for="division_but">/ Division</label><br /><br />
+					<input type="radio" id="remainder_but" name="operator" value="%" />
+					<label for="division_but">% Remainder</label><br /><br />
+				</div>
+				<div>
+					<label for="right_operand">Right Operand:</label><br />
+					<input type="number" id="right_operand" name="right_operand" /><br />
+				</div>
+				</div>
+				<br /><br />
+                <button type = "button" id = "calculate_button">Calculate</button>
+                <button type = "reset">Reset</button>
+                <h4>Expression : </h4>
+				<h4 id = "expression"></h4>
+                <h4>Result : </h4>
+				<h4 id = "result" > </h4>
+			</form>
+		</div>
+	</body>
+</html>
